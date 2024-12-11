@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pain {
+    width: 100%;
+    height: 100%vh;
+    background-color: rgb(22, 71, 106);
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas: "  area1  area2  area3" "area4 area5 area6" " area7  area8  area9";
+}
+
+
+}
+.pain>div {
+    background-color: rgb(94, 27, 156);
+    display: grid;
+    place-items: center;
+    color: fff;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1s;
+    box-shadow: 0px 0px 0px#258a81 0px 0px 0px#26a51b inset;
+}
+.pain>div:hover {
+    background-color: #26a51b;
+}
+.pain>div:first-child {
+    grid-area: area1;
+}
+.pain>div:nth-child(2) {
+    grid-area: area2;
+}
+.pain>div:nth-child(3) {
+    grid-area: area3;
+}
+.pain>div:nth-child(3) {
+    grid-area: area3;
+}
+.pain>div:nth-child(5) {
+    grid-area: area5;
+}
+.pain>div:nth-child(6) {
+    grid-area: area6;
+}
+.pain>div:nth-child(7) {
+    grid-area: area7;
+}
+.pain>div:nth-child(8) {
+    grid-area: area8;
+}
+.pain>div:last-child {
+    grid-area: area9;
+}
